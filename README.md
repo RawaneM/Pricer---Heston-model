@@ -1,4 +1,4 @@
-# Pricer---Heston-stochastic-volatility-model
+# Pricer---Stochastic-volatility-models
 Throughout the years, since the publication of the famous Black-Scholes Merton (BSM) model (1973), 
 the financial industry has made a breakthrough on options pricing matter. But it also appears that 
 this model has its limits. The most prominently bias of the BSM model is that prices of out-of-the-
@@ -39,5 +39,12 @@ stochastic correlation by using multiple stochastic volatility factors. They dem
 models have much more flexibility in controlling the level and slope of the smile (and the smirk). They 
 also showed that additional advantage is that two factor models also provide more flexibility to model 
 the volatility term structure. 
+
+In order to provide more insight into the differences in pricing performance, we test an extension of 
+the double Heston model. We formulate the idea to add jumps to the dynamic of the stock. During our research 
+we also notice that Bates (2000) had conducted an extensive empirical analysis of a large class of option 
+pricing models using S&P500 futures option data in the nineties. Among other things, he compares the performance of stochastic volatility models with the performance of stochastic volatility models augmented with Poisson-normal jumps. He evaluates the empirical performance of a two-factor stochastic volatility model, and investigates whether jumps and additional stochastic volatility factors are substitutes. Bates concludes that stochastic volatility models cannot reconcile return data and option data, even with two stochastic volatility factors, and that jumps are needed. That make our idea of adding jumps more valuable 
+and we will see it during the numerical analysis.
+
 
 
