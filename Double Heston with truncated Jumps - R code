@@ -49,8 +49,8 @@ for(i in 1:N_simul){ #Initialize the value of S, Vol_1 and Vol_2
     else payoff[i] <- max(x[N_points]-K,0)
 }
 
-UOC <- exp(-r*t)*mean(payoff)
-print(call
+call_up_out_barrier <- exp(-r*t)*mean(payoff)
+print(call_up_out_barrier)
 
 # Visualization of the jumps 
 Date <- (1:N_points) / N_points * t;Simul <- data.frame(Date, x, "Stock");
